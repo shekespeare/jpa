@@ -14,19 +14,17 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.javasampleapproach.jpa.one2one.repository.HusbandRepository;
-import com.javasampleapproach.jpa.one2one.repository.WifeRepository;
 
 @SpringBootApplication
 @EnableAutoConfiguration
 @ComponentScan("com.javasampleapproach.jpa.one2one")
 public class SpringJpaOneToOneApplication extends SpringBootServletInitializer{ //implements CommandLineRunner{	
 	
-	@Autowired
-    WifeRepository wifeRepository;
-     
-    @Autowired
-    HusbandRepository husbandRepository;
+//	@Autowired
+//    WifeRepository wifeRepository;
+//     
+//    @Autowired
+//    HusbandRepository husbandRepository;
 
 	public static void main(String[] args) {
 		System.out.println("calling main--->>>>>>>>>>>>>>>>");
